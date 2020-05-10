@@ -73,26 +73,28 @@ sortBy = (key) =>{
         const { CountryList } = this.state
         console.log(CountryList);
         return (
-            <div>
+            <div className="container">
                 <h1><span>LIVE UPDATE OF COVID19 CASES</span></h1>
                
                 {/* {<div className="sort" onClick = { sortBy()}>sort</div>} */}
                 {globals ? <div className="global_case">
                 
                 <ul className="listitem mng">
-                            <li> NewConfirmed</li>
-                            <li> TotalConfirmed</li>
-                            <li> NewDeaths</li>
-                            <li> TotalDeaths</li>
-                            <li className="recover"> NewRecovered</li>
-                            <li className="recover"> TotalRecovered</li>
+                            {/* <li> NewConfirmed</li> */}
+                            <li>Global</li>
+                            <li> Total Confirmed</li>
+                            {/* <li> NewDeaths</li> */}
+                            <li> Total Deaths</li>
+                            {/* <li className="recover"> NewRecovered</li> */}
+                            <li className="recover"> Total Recovered</li>
                         </ul>
                         <ul className="listitem">
-                            <li> {globals.NewConfirmed}</li>
+                            {/* <li> {globals.NewConfirmed}</li> */}
+                            <li>Global</li>
                             <li> {globals.TotalConfirmed}</li>
-                            <li> {globals.NewDeaths}</li>
+                            {/* <li> {globals.NewDeaths}</li> */}
                             <li> {globals.TotalDeaths}</li>
-                            <li className="recover"> {globals.NewRecovered}</li>
+                            {/* <li className="recover"> {globals.NewRecovered}</li> */}
                             <li className="recover"> {globals.TotalRecovered}</li>
                         </ul>
                 
@@ -103,17 +105,17 @@ sortBy = (key) =>{
                 
                 <ul className="listitem mng">
                             <li> Country</li>
-                            <li> NewConfirmed</li>
-                            <li> TotalConfirmed</li>
-                            <li> NewDeaths</li>
-                            <li> TotalDeaths</li>
-                            <li className="recover"> TotalRecovered</li>
+                            {/* <li> NewConfirmed</li> */}
+                            <li> Total Confirmed</li>
+                            {/* <li> NewDeaths</li> */}
+                            <li> Total Deaths</li>
+                            <li className="recover"> Total Recovered</li>
                         </ul>
                         <ul className="listitem">
                             <li> {CountryList.Country}</li>
-                            <li> {CountryList.NewConfirmed}</li>
+                            {/* <li> {CountryList.NewConfirmed}</li> */}
                             <li> {CountryList.TotalConfirmed}</li>
-                            <li> {CountryList.NewDeaths}</li>
+                            {/* <li> {CountryList.NewDeaths}</li> */}
                             <li> {CountryList.TotalDeaths}</li>
                             <li className="recover"> {CountryList.TotalRecovered}</li>
                         </ul>
@@ -134,15 +136,15 @@ sortBy = (key) =>{
                         {/* onClick = { sortBy(post.Country)} */}
                             {/* <li > {globals.NewConfirmed}</li> */}
                             <li>Country</li>
-                            <li onClick = {()=> this.sortBy()}> Date</li>
-                            <li> NewConfirmed</li>
-                            <li> NewDeaths</li>
-                            <li className="recover"> NewRecovered</li>
+                            {/* <li onClick = {()=> this.sortBy()}> Date</li>
+                            <li> NewConfirmed</li> */}
+                            {/* <li> NewDeaths</li> */}
+                            {/* <li className="recover"> NewRecovered</li>
 
-                            <li> Slug</li>
-                            <li> TotalConfirmed</li>
-                            <li> TotalDeaths</li>
-                            <li className="recover"> TotalRecovered</li>
+                            <li> Slug</li> */}
+                            <li> Total Confirmed</li>
+                            <li> Total Deaths</li>
+                            <li className="recover"> Total Recovered</li>
 
                         </ul>
                    
@@ -158,12 +160,12 @@ sortBy = (key) =>{
                  
                         <ul className="listitem">
                             <li > {post.Country}</li>
-                            <li> {post.Date}</li>
-                            <li> {post.NewConfirmed}</li>
-                            <li> {post.NewDeaths}</li>
-                            <li className="recover"> {post.NewRecovered}</li>
+                            {/* <li> {post.Date}</li>
+                            <li> {post.NewConfirmed}</li> */}
+                            {/* <li> {post.NewDeaths}</li> */}
+                            {/* <li className="recover"> {post.NewRecovered}</li>
 
-                            <li> {post.Slug}</li>
+                            <li> {post.Slug}</li> */}
                             <li> {post.TotalConfirmed}</li>
                             <li> {post.TotalDeaths}</li>
                             <li className="recover"> {post.TotalRecovered}</li>
